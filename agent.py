@@ -5,7 +5,8 @@ from langchain.agents import create_agent
 def get_bank_agent(model):
     tools = [
         handle_transfer,
-
+        handle_block_transaction,
+        transfer_loan_verification
     ]
 
 
